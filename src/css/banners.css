@@ -1,0 +1,11 @@
+.imgBanners img{
+    width: 100%;
+    margin: auto;
+}
+
+@media (max-width: 600px){
+    .imgBanners img{
+        width: 100%;
+        margin: auto;
+    }
+}

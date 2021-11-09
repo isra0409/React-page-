@@ -1,0 +1,110 @@
+/* -------------------- Contenedor Gral -------------------- */
+
+.contenedorMenu{
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* -------------------- Logo Menu -------------------- */
+
+.menuLogo img{
+  display: none;
+}
+
+.imgLogo > p{
+  color: whitesmoke;
+  font-size: 40px;
+}
+
+/* -------------------- Menu -------------------- */
+
+.mostrar{
+  margin-left: 0;
+}
+
+.ulMenu{
+  display: flex;
+  list-style: none; 
+  margin-bottom: 0; 
+}
+
+.navMenu > .ulMenu > .liMenu{
+  color: whitesmoke;
+  padding: 26px 10px;
+}
+
+.navMenu > .ulMenu > .liMenu a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.navMenu > .ulMenu > .liMenu:hover{
+  background-color: teal;
+}
+
+/* -------------------- Mobile -------------------- */
+
+@media (max-width: 1920px){
+  .logoMenu{
+    display: none;
+    width: 40px;
+    position: absolute;
+    left: 10px;
+    top: 8px;
+  }
+}
+
+@media (max-width: 600px){
+  .logoMenu{
+    display: flex;
+    width: 40px;
+    position: absolute;
+    left: 10px;
+    top: 8px;
+  }
+}
+
+@media (max-width: 600px){
+  .contenedorMenu{
+    flex-direction: column;
+  }
+
+  .menuLogo img{
+    display: flex;
+    width: 40px;
+    position: absolute;
+    left: 0;
+    margin: 10px;
+  }
+
+  .navMenu{
+    width: 100%;
+  }
+
+  .ulMenu{
+    flex-direction: column;
+    list-style: none;
+    display: none;
+    margin-bottom: 0;
+  }
+
+  .ulMenu.show{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .liMenu{
+    padding: 10px;
+  }
+
+  .liMenu:hover{
+  
+  }
+
+  .navMenu > .ulMenu > .liMenu > a{
+    padding: 0;
+  }
+
+}
